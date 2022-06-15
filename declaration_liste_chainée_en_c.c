@@ -1,5 +1,5 @@
 typedef struct cellule{
-int val,ind;
+int value;
 struct cellule *suiv;
 }cell;
 typedef cell *liste;
