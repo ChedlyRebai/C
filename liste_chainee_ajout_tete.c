@@ -6,11 +6,12 @@ struct cellule * suivant;
 };
 typedef struct cellule* Liste;
 
-Liste ajouttete(Liste L,int e)
-{
-struct cellule *p=malloc(sizeof(struct cellule));
-p->info=e;
-p->suivant=L;
-L=p;
-return L;
+void initialisation_liste_chainee_c(Liste *l){
+    *l=NULL;
+}
+
+void main(){
+    Liste l;
+    initialisation_liste_chainee_c(&l);
+
 }
